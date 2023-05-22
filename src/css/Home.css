@@ -1,0 +1,63 @@
+.home {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
+
+.nav {
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/mannequin.jpg');
+    background-size: cover;
+    background-color: rgb(77, 77, 77);
+}
+
+.nav h2 {
+    color: whitesmoke;
+    font-weight: lighter;
+    margin-left: 20px;
+}
+
+.style-types a {
+    text-decoration: none;
+    color: white;
+}
+
+.style-types a:hover {
+    transform: scale(1.2);
+}
+
+.center-styling-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-texts {
+    margin-top: 90px;
+}
+
+.styling-btn {
+    border: none;
+    background-color: silver;
+    border-radius: 7px;
+    margin-top: 170px;
+    padding: 10px 20px;
+    width: 200px;
+    font-size: medium;
+}
+
+.style-types {
+    display: grid;
+    justify-content: center;
+    row-gap: 42px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.slide img {
+    height: 890px;
+    width: 100%;
+    object-fit: cover;
+}
+

@@ -1,0 +1,70 @@
+img {
+    width: 100%;
+}
+
+.piece-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.goBack-btn {
+    float: inline-end;
+    margin-right: 40px; 
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:focus {
+    background-color: black;
+    color: white;
+}
+
+.edit-btn {
+    float: inline-end;
+    margin-right: 40px;
+}
+
+h4 {
+    /* margin-top: 210px; */
+    font-size: 50px;
+    padding: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+.web-link {
+    width: 170px;
+    height: 20px;
+    /* margin-left: 110px; */
+}
+
+.web-link:hover {
+    text-decoration: white;
+}
+
+.piece-text {
+    /* align-items: center; */
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 190px;
+}
+
+img {
+    height: 557px;
+    object-fit: cover;
+}
+
+.piece-text a {
+    text-decoration: none;
+    color: hotpink;
+}
+
+
+
+
+
+

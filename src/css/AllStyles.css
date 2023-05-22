@@ -1,0 +1,95 @@
+.styles-nav {
+    display: grid;
+    float: left;
+    gap: 41px;
+    padding: 0;
+    border: 0;
+    position: absolute;
+}
+
+.styles-nav button:hover {
+    background-color: black;
+    color: white;
+}
+
+.styles-nav button:focus {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:focus {
+    background-color: black;
+    color: white;
+}
+
+.styles-nav button {
+    width: 107px;
+}
+
+.pieces {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.piece img {
+    width: 222px;
+    height: 297px;
+    object-fit: cover;
+    padding: 0;
+    border: 0;
+}
+
+.piece {
+    display: grid;
+    justify-items: center;
+    padding: 0;
+    border: 0;
+}
+
+.styles-nav {
+        display: grid;
+        float:left;
+        margin-top: 70px;
+        gap: 21px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+        border: 0;
+}
+    
+.styles-nav button:hover {
+        background-color: black;
+        color: white;
+}
+    
+.styles-nav button:focus {
+        background-color: black;
+        color: white;
+}
+    
+.styles-nav button {
+        width: 107px;
+}
+    
+.add-new {
+        float: inline-end;
+        margin-right: 40px;
+} 
+
+.piece-text {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.piece-text button {
+    height: 20px;
+}
+
+
+
