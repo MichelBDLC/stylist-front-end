@@ -50,6 +50,7 @@ export default function Home(props) {
             <Link to='/styles' name='minimalist' onClick={handleSelectedStyle}> Minimalist </Link>
             <Link to='/styles' name='nightlife' onClick={handleSelectedStyle}> Nightlife </Link>
             <Link to='/styles' name='casual-stunt' onClick={handleSelectedStyle}> Casual Stunt </Link>
+            <Link to='/styles' name='girly' onClick={handleSelectedStyle}> Girly </Link>
             </span>
             </div>
             <br />
