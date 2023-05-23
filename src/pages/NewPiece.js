@@ -70,7 +70,7 @@ export default function NewPiece() {
                     <br />
                     <div>
                     <label> Photograph URL </label>
-                    <input id="photograph" type="text" value={piece.img} onChange={handleTextChange} />
+                    <input id="photograph" type="url" value={piece.img} onChange={handleTextChange} />
                     </div>
                     <div>
                         <label> Price </label>
