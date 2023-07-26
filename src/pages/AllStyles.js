@@ -10,6 +10,10 @@ export default function AllStyles(props) {
 
     const [pieces, setPieces] = useState([]);
 
+    const [selectedCategory, setSelectedCategory] = useState('all-styles');
+
+    const [category, setCategory] = useState("");
+
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -17,6 +21,9 @@ export default function AllStyles(props) {
         .get(`${API}/styles`)
         .then((response) => {
             setPieces(response.data);
+            for (let item of response.data) {
+                setCategory(item.category)
+            }
         }) 
         .catch(e => console.error('catch', e));
       }, []);
@@ -37,7 +44,12 @@ export default function AllStyles(props) {
         });
       }
 
-      //7 per style preferably, but start with like 2 and if you have time add more  
+      function handleSort(event) {
+        if (event.target.name === category) {
+            setSelectedCategory(event.target.name);
+        }
+        return;
+      }
 
     return (
         <>
@@ -53,9 +65,17 @@ export default function AllStyles(props) {
             <button name="other" onClick={handleSelectedStyle}> Other </button>
         </div>
         <br />
+        <select onChange={handleSort}>
+            <option name="sort"> Sort </option>
+            <option name="Tops"> Tops </option>
+            <option name="Bottoms"> Bottoms </option>
+            <option name="Dresses"> Dresses </option>
+            <option name="Accesories"> Accesories </option>
+            <option name="Other"> Other </option>
+        </select>
         <button className="add-new" onClick={() => navigate('/styles/new')} > + Add New Piece + </button>
         <br />
-        <ThePiece pieces={pieces} selectedStyle={props.selectedStyle} handleDelete={handleDelete} />
+        <ThePiece pieces={pieces} selectedCategory={selectedCategory} selectedStyle={props.selectedStyle} handleDelete={handleDelete} />
         </>
     )
 }

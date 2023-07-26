@@ -1,0 +1,21 @@
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:focus {
+    background-color: black;
+    color: white;
+}
+
+button {
+    float: right;
+    margin-right: 70px;
+    margin-top: 77px;
+}
+
+p {
+    display: grid;
+    justify-content: center;
+    margin-top: 290px;
+}

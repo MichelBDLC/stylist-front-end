@@ -10,6 +10,8 @@ export default function ThePiece(props) {
         {
             props.pieces.map((piece) => {
 
+                if (props.selectedCategory !== "sort")
+
                 if (props.selectedStyle === "all-styles" || props.selectedStyle === piece.style) {
 
                     return (
@@ -22,7 +24,6 @@ export default function ThePiece(props) {
                         </div>
                     )
                 }
-
                 return null;
             })
         }

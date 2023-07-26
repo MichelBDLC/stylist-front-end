@@ -7,6 +7,7 @@ import AllStyles from './pages/AllStyles';
 import Piece from './pages/Piece';
 import NewPiece from './pages/NewPiece';
 import EditPiece from './pages/EditPiece';
+import NotFound from './pages/NotFound';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/styles/:id' element={<Piece />} />
         <Route path='/styles/new' element={<NewPiece />} />
         <Route path='styles/:id/edit' element={<EditPiece />} />
+        <Route path='/*' element={<NotFound />} />
       </Routes>
       </main>
     </div>

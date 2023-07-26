@@ -35,18 +35,13 @@ export default function Piece() {
         <img src={piece.img} alt=""/>
         <div className="piece-text">
         <h4> {piece.name} </h4>
-        {/* <p> Category: {piece.category} </p>
-        <p> Style: {piece.style} </p> */}
         <br />
         <button className="web-link"><Link to={piece.url}> view in original website </Link></button>
         </div>
         </div>
         <section>
-            {/* other pair style suggestions here  */}
         </section>
         </>
     )
 }
 
-//show style it with pieces on the bottom... figure it out!!
-//then do some more editing to complete the look at the end, add a bunch of unnecesary shit 

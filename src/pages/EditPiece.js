@@ -55,8 +55,9 @@ export default function EditPiece() {
         <br />
         <button className="goBack-btn" onClick={() => navigate(-1)}> Go back </button>
         <br />
+        
         <div className="New">
-            <br />
+        <h2> Edit. </h2>
             <div className="form">
                 <br />
             <form onSubmit={handleSubmit}>
@@ -81,6 +82,7 @@ export default function EditPiece() {
                 <div>
                     <label> Price </label>
                     <input id="price" type="number" value={piece.price} onChange={handleTextChange} />
+                    <br />
                 </div>
                 <div className="dropdowns">
                     <label> Category </label>
@@ -102,8 +104,7 @@ export default function EditPiece() {
                         <option value="Nightlife"> Nightlife </option>
                     </select>
                 </div>
-                <br />
-                <button type="submit"> Save Edit </button>
+                <button type="submit" className="save-edit"> Save Edit </button>
             </form>
             </div>
         </div>

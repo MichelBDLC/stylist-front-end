@@ -54,6 +54,7 @@ export default function NewPiece() {
             <br />
             <div className="form">
                 <br />
+            <h2> New </h2>
             <form onSubmit={handleSubmit}>
                 <br />
                 <div className="fav">
@@ -70,7 +71,7 @@ export default function NewPiece() {
                     <br />
                     <div>
                     <label> Photograph URL </label>
-                    <input id="photograph" type="url" value={piece.img} onChange={handleTextChange} />
+                    <input id="url" type="text" value={piece.img} onChange={handleTextChange} />
                     </div>
                     <div>
                         <label> Price </label>
@@ -98,7 +99,7 @@ export default function NewPiece() {
                     </select>
                 </div>
                 <br />
-                <button type="submit"> Add Piece </button>
+                <button type="submit" className="add-btn"> Add </button>
             </form>
             </div>
         </div>
