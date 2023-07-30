@@ -1,5 +1,7 @@
 Closet. 
 
+![stylist home](https://github.com/MichelBDLC/stylist-front-end/assets/103394185/589d3897-f0a5-4c14-b7ef-a79ea454ec48)
+
 View site at: https://stylistcloset.netlify.app/
 
 BackEnd Repository - https://github.com/MichelBDLC/Stylist-Back-End
